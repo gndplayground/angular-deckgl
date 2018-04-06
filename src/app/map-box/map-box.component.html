@@ -1,0 +1,10 @@
+<p>
+  London car accidents from 1979
+</p>
+<div *ngIf="mapName">
+  <div class="map-box">
+    <div [id]="mapName" style="height: 100vh"></div>
+    <ng-content></ng-content>
+  </div>
+</div>
+

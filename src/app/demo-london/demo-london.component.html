@@ -1,0 +1,9 @@
+<app-map-box mapName="demo-london" (mapSizeChange)="onMapChangeSize($event)" [viewport]="deckViewPort">
+  <app-deckgl
+    glId="demo-london-deckgl"
+    (viewPortChange)="onViewPortChange($event)"
+    [data]="data"
+    [width]="mapWidth"
+    [height]="mapHeight">
+  </app-deckgl>
+</app-map-box>
